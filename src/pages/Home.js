@@ -4,17 +4,15 @@ import Row from "../components/Row";
 
 import request from "../Request";
 
-
 const Home = () => {
   return (
     <>
       <Main />
-      <Row title='Up Coming' fetchUrl={request.requestUpcoming} />
-      <Row title="Popular" fetchUrl={request.requestPopular} />
-      <Row title="Trending" fetchUrl={request.requestTrending} />
-      <Row title="Top Rated" fetchUrl={request.requestTopRated} />
-      <Row title="Horror" fetchUrl={request.requestHorror} />
-
+      <Row title="Up Coming" fetchURl={request.requestUpcoming} />
+      <Row title="Popular" fetchURl={request.requestPopular} />
+      <Row title="Trending" fetchURl={request.requestTrending} />
+      <Row title="Top Rated" fetchURl={request.requestTopRated} />
+      <Row title="Horror" fetchURl={request.requestHorror} />
     </>
   );
 };
